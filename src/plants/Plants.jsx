@@ -1,7 +1,7 @@
 import Plant from "./Plant";
 
+/** Creates a unordered list of objects using the Plant function */
 
-/** Creates a  */
 export default function Plants({ plants }) {
   return (
     <section>
