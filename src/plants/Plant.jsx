@@ -1,4 +1,4 @@
-import AddToCart from "../cart/AddToCart";
+import AddToCart from "../cart/CartItem";
 
 export default function Plant( {plant} ) {
   return (
@@ -7,7 +7,7 @@ export default function Plant( {plant} ) {
       <figure>{plant.image}</figure>
       <h3>{plant.name}</h3>
       <button
-       onClick={()=> AddToCart({plant})}
+       onClick={()=> addToCart({plant})}
       >
         Add to Cart
       </button>
