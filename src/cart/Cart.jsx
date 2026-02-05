@@ -1,4 +1,4 @@
-import AddToCart from "./CartItem";
+import CartItem from "./CartItem";
 
 /** Creates a Cart section */
 export default function Cart({cart}) {

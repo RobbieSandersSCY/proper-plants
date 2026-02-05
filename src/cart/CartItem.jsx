@@ -1,4 +1,4 @@
-export default function AddToCart({item}) {
+export default function CartItem({item, addToCart}) {
   return (
     <li className="cart-item">
       <figure>{item.image}</figure>

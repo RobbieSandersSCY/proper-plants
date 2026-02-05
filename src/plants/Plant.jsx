@@ -1,6 +1,4 @@
-import AddToCart from "../cart/CartItem";
-
-export default function Plant( {plant} ) {
+export default function Plant( {plant, addToCart} ) {
   return (
   <>
     <li className="plant">
