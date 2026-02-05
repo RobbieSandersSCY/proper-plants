@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 30ch;
+  gap: 1rem;
+}
+
 .plants {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
