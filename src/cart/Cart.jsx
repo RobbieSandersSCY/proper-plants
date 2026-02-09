@@ -3,7 +3,7 @@ import CartItem from "./CartItem";
 import "../index.css"
 
 /** Creates a Cart section */
-export default function Cart({cart, addToCart, removeFromCart}) {
+export default function Cart({ cart, addToCart, removeFromCart }) {
   return (
     <section className="cart">
       <h2>Cart</h2>

@@ -1,4 +1,4 @@
-export default function Plant( {plant, addToCart} ) {
+export default function Plant({ plant, addToCart }) {
   return (
     <li className="plant">
       <figure>{plant.image}</figure>

@@ -1,9 +1,9 @@
-export default function CartItemQuantity({item, addToCart, removeFromCart}) {
+export default function CartItemQuantity({ item, addToCart, removeFromCart }) {
   return (
     <div className="cart-item-quantity">
-      <button onClick={()=>removeFromCart({item})}>-</button>
+      <button onClick={()=>removeFromCart(item)}>-</button>
       <span>{item.quantity}</span>
-      <button onClick={()=>addToCart({item})}>+</button>
+      <button onClick={()=>addToCart(item)}>+</button>
     </div>
   );
 }
