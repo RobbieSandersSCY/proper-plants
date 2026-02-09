@@ -58,7 +58,11 @@ export default function App() {
         plants={PLANTS}
         addToCart={addToCart}
         />
-      <Cart cart={cart} />
+      <Cart
+      cart={cart}
+      addToCart={addToCart}
+      removeFromCart={removeFromCart}
+      />
     </main>
   </>
   );

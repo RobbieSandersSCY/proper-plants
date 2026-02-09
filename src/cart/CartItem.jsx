@@ -1,9 +1,14 @@
-export default function CartItem({item, addToCart}) {
+export default function CartItem({item, addToCart, removeFromCart}) {
   return (
     <li className="cart-item">
       <figure>{item.image}</figure>
       <h3>{item.name}</h3>
-      <button>-</button><button>+</button>
+      <button onClick={()=>removeFromCart({item})}>
+        -
+      </button>
+      <button onClick={()=>addToCart({item})}>
+        +
+      </button>
     </li>
   );
 }
