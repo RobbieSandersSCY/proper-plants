@@ -1,25 +1,26 @@
 import CartItem from "./CartItem";
 
 /** Creates a Cart section */
-export default function Cart({cart, addToCart}) {
-    {if (cart.length === 0) {
-    <section>
-      <h2>Cart</h2>
-      <p>Your cart is empty!</p>
-    </section>
-    };
+export default function Cart({cart, addToCart, removeFromCart}) {
   return (
-    <section>
+    <section className="cart">
       <h2>Cart</h2>
-      <ul className="cart">
-        {cart.map((item) => (
-          <CartItem 
-          key={item.id} 
-          item={item} 
-          addToCart = {addToCart}
-          />))}
-      </ul>
+      {cart.length === 0 ? (
+        <p>Your cart is empty!</p>
+      ) : (
+      <>
+        <ul>
+          {cart.map((item) => (
+            <CartItem 
+              key={item.id} 
+              item={item} 
+              addToCart = {addToCart}
+              removeFromCart={removeFromCart}
+            />
+          ))}
+        </ul>
+      </>
+      )}
     </section>
   );
-};
 }
