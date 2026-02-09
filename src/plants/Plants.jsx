@@ -1,5 +1,7 @@
 import Plant from "./Plant";
 
+import "../index.css"
+
 /** Creates a unordered list of objects using the Plant function */
 
 export default function Plants({ plants, addToCart }) {

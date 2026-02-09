@@ -1,5 +1,7 @@
 import CartItem from "./CartItem";
 
+import "../index.css"
+
 /** Creates a Cart section */
 export default function Cart({cart, addToCart, removeFromCart}) {
   return (
