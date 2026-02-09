@@ -49,21 +49,21 @@ export default function App() {
   };
   
   return (
-  <>
-    <header>
-      <h1>Proper Plants</h1>
-    </header>
-    <main>
-      <Plants
-        plants={PLANTS}
-        addToCart={addToCart}
+    <>
+      <header>
+        <h1>Proper Plants</h1>
+      </header>
+      <main>
+        <Plants
+          plants={PLANTS}
+          addToCart={addToCart}
         />
-      <Cart
-      cart={cart}
-      addToCart={addToCart}
-      removeFromCart={removeFromCart}
-      />
-    </main>
-  </>
+        <Cart
+          cart={cart}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
+        />
+      </main>
+    </>
   );
 }
