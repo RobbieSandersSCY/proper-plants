@@ -1,7 +1,7 @@
 import CartItem from "./CartItem";
 
 /** Creates a Cart section */
-export default function Cart({cart}) {
+export default function Cart({cart, addToCart}) {
     {if (cart.length === 0) {
     <section>
       <h2>Cart</h2>
@@ -13,7 +13,11 @@ export default function Cart({cart}) {
       <h2>Cart</h2>
       <ul className="cart">
         {cart.map((item) => (
-          <AddToCart key={item.id} item={item} />))}
+          <CartItem 
+          key={item.id} 
+          item={item} 
+          addToCart = {addToCart}
+          />))}
       </ul>
     </section>
   );
